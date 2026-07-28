@@ -1,7 +1,5 @@
 
 require('dotenv').config({ path: __dirname + '/.env' });
-console.log('Looking for .env at:', __dirname + '/.env');
-console.log('Key loaded:', process.env.RESTCOUNTRIES_API_KEY);
 
 const getCountryInfo = async (name) => {
   const response = await fetch(
